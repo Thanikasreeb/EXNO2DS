@@ -33,6 +33,7 @@ df
 ```
 ## Output
 <img width="1642" height="572" alt="image" src="https://github.com/user-attachments/assets/5ac181aa-6dea-469d-9d56-21992e1d2e7e" />
+
 ## coding
 ```
 df.info()
