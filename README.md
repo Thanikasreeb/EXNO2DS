@@ -22,8 +22,53 @@ STEP 7: Use cross tabulation method to quantitatively analyze the relationship b
 
 STEP 8: Use heatmap method of representation to show relationships between two variables, one plotted on each axis.
 
-## CODING AND OUTPUT
-        <<INCLUDE YOUR CODING AND OUTPUT SCREENSHOTS>>
+## CODING 
+```
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+df=pd.read_csv("titanic_dataset.csv")
+df
+```
+## Output
+<img width="1642" height="572" alt="image" src="https://github.com/user-attachments/assets/5ac181aa-6dea-469d-9d56-21992e1d2e7e" />
+## coding
+```
+df.info()
+```
+## output
+<img width="537" height="468" alt="image" src="https://github.com/user-attachments/assets/e34f7b9e-6149-4915-aab4-c5d35c54db78" />
+
+## coding
+```
+df.dtypes
+```
+## output
+<img width="342" height="620" alt="image" src="https://github.com/user-attachments/assets/5c1bfe57-1fb6-40bd-b44f-c9d08d88ef5e" />
+
+## CODING
+```
+df.value_counts()
+```
+## output 
+<img width="1687" height="660" alt="image" src="https://github.com/user-attachments/assets/cb9436b8-0cb8-4972-ac7b-e78b8be2c320" />
+
+## coding
+```
+df['Age'].value_counts()
+```
+## output
+<img width="270" height="660" alt="image" src="https://github.com/user-attachments/assets/099e9fe2-3870-4b2c-9c9b-6c96db064c9f" />
+
+## coding
+```
+corr = df.select_dtypes(include=np.number).corr()
+sns.heatmap(corr,annot=True)
+```
+
+## output
+<img width="796" height="613" alt="image" src="https://github.com/user-attachments/assets/02b3c93c-ef23-4a61-9686-f1ca84b94c10" />
 
 # RESULT
-        <<INCLUDE YOUR RESULT HERE>>
+Thus the dataset value is found
